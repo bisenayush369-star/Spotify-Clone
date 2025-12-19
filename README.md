@@ -48,3 +48,7 @@ Spotify-Clone/
 ├── Playlist folders
 ├── audio files (.mp3)
 └── manifeast.json
+
+## ⭐ Support
+
+If you like this project, give it a star on GitHub.
