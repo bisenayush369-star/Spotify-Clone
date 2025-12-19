@@ -1,0 +1,14 @@
+{
+    "playlists": [
+        {
+            "title": "NCS Hits",
+            "description": "No Copyright Sounds for everyone",
+            "image": "playlist2.jpg"
+        },
+        {
+            "title": "NCS Favorites",
+            "description": "Top picks from No Copyright Sounds",
+            "image": "playlist4.jpg"
+        }
+    ]
+}

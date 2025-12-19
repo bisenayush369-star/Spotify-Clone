@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- id="volume-slider" min="0" max="100" value="100"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 168 168'%3E%3Cpath fill='%231ed760' d='M83.996.277C37.747.277.253 37.77.253 84.019c0 46.251 37.494 83.741 83.743 83.741 46.254 0 83.744-37.49 83.744-83.741 0-46.246-37.49-83.738-83.745-83.738l.001-.004zm38.404 120.78a5.217 5.217 0 01-7.18 1.73c-19.662-12.01-44.414-14.73-73.564-8.07a5.222 5.222 0 01-6.249-3.93 5.213 5.213 0 013.926-6.25c31.9-7.291 59.263-4.15 81.337 9.34 2.46 1.51 3.24 4.72 1.73 7.18zm10.25-22.805c-1.89 3.075-5.91 4.045-8.98 2.155-22.51-13.839-56.823-17.846-83.448-9.764-3.453 1.043-7.1-.903-8.148-4.35a6.538 6.538 0 014.354-8.143c30.413-9.228 68.222-4.758 94.072 11.127 3.07 1.89 4.04 5.91 2.15 8.976v-.001zm.88-23.744c-26.99-16.031-71.52-17.505-97.289-9.684-4.138 1.255-8.514-1.081-9.768-5.219a7.835 7.835 0 015.221-9.771c29.581-8.98 78.756-7.245 109.83 11.202a7.823 7.823 0 012.74 10.733c-2.2 3.722-7.02 4.949-10.73 2.739z'/%3E%3C/svg%3E"
+        type="image/svg+xml">
+</head>
+
+<body>
+
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="menu-header">
+                <radha class="close-menu" aria-label="Close menu">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="currentColor" fill="none">
+                        <path d="M18 6L6.00081 17.9992M17.9992 18L6 6.00085" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <img src=".\svg\close.svg" alt="" />
+                </radha>
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img class="invert" src=".\svg\logo.svg" alt="" width="110"> </div>
+                <ul>
+                    <li><img class="invert" src=".\svg\home.svg" alt="home">Home</li>
+                    <li><img class="invert" src=".\svg\search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded">
+                <div class="heading">
+                    <img src="https://cdn-icons-png.flaticon.com/128/17009/17009106.png" class="invert"
+                        alt="Round green icon with centered white plus sign indicating add to library; flat graphic on transparent background; no text; neutral and functional tone" />
+                    <h2>Your Library</h2>
+                </div>
+
+                <div class="songList">
+                    <ul>
+                        <li>
+                            <img class="invert" src=".\svg\music.svg" />
+                            <div class="info">
+                                <div>Anime de Location</div>
+                                <div>(Bleach OST)</div>
+                            </div>
+                            <div class="playnow">
+                                <button class="play-button">Play Now</button>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="invert" src=".\svg\music.svg" />
+                            <div class="info">
+                                <div>Don_t Miss</div>
+                                <div>Unknown Artist</div>
+                            </div>
+                            <div class="playnow">
+                                <button class="play-button">Play Now</button>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="invert" src=".\svg\music.svg" />
+                            <div class="info">
+                                <div>KEEP UP (Slowed_Reverbed)</div>
+                                <div>Unknown Artist</div>
+                            </div>
+                            <div class="playnow">
+                                <button class="play-button">Play Now</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right bg-grey rounded ">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+                        <button class="hamburger">
+                            <img width="28" class="invert" src=".\svg\hamburger.svg" alt="Menu">
+                        </button>
+                    </div>
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                        color="currentColor">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="white"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                        color="currentColor">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="white"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="buttons">
+                    <button class="signupbtn">Signup</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+            <div class="spotify-playlist">
+                <h1>Spotify Playlist</h1>
+                <div class="cardContainer"
+                    style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; padding: 20px;">
+                    <!-- Chillax -->
+                    <div class="card" data-folder="Chillax">
+                        <div class="play">
+                            <svg viewBox="0 0 16 16" height="16" width="16" fill="black">
+                                <path d="M4.018 14L14.41 8 4.018 2z"></path>
+                            </svg>
+                        </div>
+                        <img src="songs\Chillax\download (1).jpg" alt="Chillax Playlist">
+                        <h2>Chillax</h2>
+                        <p>Relaxing tunes to help you unwind</p>
+                    </div>
+
+                    <!-- Crazy Mood -->
+                    <div class="card" data-folder="Crazy Mood">
+                        <div class="play">
+                            <svg viewBox="0 0 16 16" height="16" width="16" fill="black">
+                                <path d="M4.018 14L14.41 8 4.018 2z"></path>
+                            </svg>
+                        </div>
+                        <img src="songs\Crazy Mood\download.jpg" alt="Crazy Mood Playlist">
+                        <h2>Crazy Mood</h2>
+                        <p>Songs for your wildest moments</p>
+                    </div>
+
+                    <!-- CAR -->
+                    <div class="card" data-folder="CAR">
+                        <div class="play">
+                            <svg viewBox="0 0 16 16" height="16" width="16" fill="black">
+                                <path d="M4.018 14L14.41 8 4.018 2z"></path>
+                            </svg>
+                        </div>
+                        <img src="songs\CAR\download.jpg" alt="CAR Playlist">
+                        <h2>Car Music</h2>
+                        <p>Car speed vibes</p>
+                    </div>
+
+                    <!-- Cyber -->
+                    <div class="card" data-folder="Cyber">
+                        <div class="play">
+                            <svg viewBox="0 0 16 16" height="16" width="16" fill="black">
+                                <path d="M4.018 14L14.41 8 4.018 2z"></path>
+                            </svg>
+                        </div>
+                        <img src="songs\Cyber\download (1).jpg" alt="Cyberpunk Playlist">
+                        <h2>Cyberpunk</h2>
+                        <p>Welcome to the night city full of neon lights and advanced technology</p>
+                    </div>
+
+                    <!-- Dark Tone -->
+                    <div class="card" data-folder="Dark Tone">
+                        <div class="play">
+                            <svg viewBox="0 0 16 16" height="16" width="16" fill="black">
+                                <path d="M4.018 14L14.41 8 4.018 2z"></path>
+                            </svg>
+                        </div>
+                        <img src="songs\Dark Tone\download.jpg" alt="Dark Tone Playlist">
+                        <h2>Dark Tone</h2>
+                        <p>Deep and mysterious melodies</p>
+                    </div>
+
+                    <!-- English -->
+                    <div class="card" data-folder="English">
+                        <div class="play">
+                            <svg viewBox="0 0 16 16" height="16" width="16" fill="black">
+                                <path d="M4.018 14L14.41 8 4.018 2z"></path>
+                            </svg>
+                        </div>
+                        <img src="songs\English\download.jpg" alt="English Playlist">
+                        <h2>English Hits</h2>
+                        <p>Top English tracks collection</p>
+                    </div>
+
+                    <!-- Gaming -->
+                    <div class="card" data-folder="Gaming">
+                        <div class="play">
+                            <svg viewBox="0 0 16 16" height="16" width="16" fill="black">
+                                <path d="M4.018 14L14.41 8 4.018 2z"></path>
+                            </svg>
+                        </div>
+                        <img src="songs\Gaming\download.jpg" alt="Gaming Playlist">
+                        <h2>Gaming Mix</h2>
+                        <p>Epic gaming soundtracks</p>
+                    </div>
+
+                    <!-- GYM -->
+                    <div class="card" data-folder="GYM">
+                        <div class="play">
+                            <svg viewBox="0 0 16 16" height="16" width="16" fill="black">
+                                <path d="M4.018 14L14.41 8 4.018 2z"></path>
+                            </svg>
+                        </div>
+                        <img src="songs\GYM\download.jpg" alt="GYM Playlist">
+                        <h2>Workout Mix</h2>
+                        <p>High-energy tracks for your workout</p>
+                    </div>
+
+                    <!-- NCS -->
+                    <div class="card" data-folder="ncs">
+                        <div class="play">
+                            <svg viewBox="0 0 16 16" height="16" width="16" fill="black">
+                                <path d="M4.018 14L14.41 8 4.018 2z"></path>
+                            </svg>
+                        </div>
+                        <img src="songs\ncs\ab67706c0000da845e1caf170882c6f8a2913e82.jpg" alt="NCS Playlist">
+                        <h2>NCS Collection</h2>
+                        <p>No Copyright Sounds for content creators</p>
+                    </div>
+
+                    <!-- Phonk -->
+                    <div class="card" data-folder="Phonk">
+                        <div class="play">
+                            <svg viewBox="0 0 16 16" height="16" width="16" fill="black">
+                                <path d="M4.018 14L14.41 8 4.018 2z"></path>
+                            </svg>
+                        </div>
+                        <img src="songs\Phonk\download (1).jpg" alt="Phonk Playlist">
+                        <h2>Phonk</h2>
+                        <p>Best of Phonk music collection</p>
+                    </div>
+
+                    <!-- Punjabi -->
+                    <div class="card" data-folder="Punjabi">
+                        <div class="play">
+                            <svg viewBox="0 0 16 16" height="16" width="16" fill="black">
+                                <path d="M4.018 14L14.41 8 4.018 2z"></path>
+                            </svg>
+                        </div>
+                        <img src="songs\Punjabi\size_m_1712055803.jpg" alt="Punjabi Playlist">
+                        <h2>Punjabi Hits</h2>
+                        <p>Top Punjabi music collection</p>
+                    </div>
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="abovebar">
+                        <div class="songinfo"></div>
+                        <div class="songtime"></div>
+                    </div>
+                    <div class="songbuttons">
+                        <img id="previous" src=".\svg\playba.svg" alt="">
+                        <img id="play" src=".\svg\pause.svg" alt="play button" />
+                        <img id="next" src=".\svg\next.svg" alt="">
+                    </div>
+                    <div class="timevol">
+
+                        <!-- <div class="songtime"> -->
+
+                    </div>
+
+                    <div class="volume" role="group" aria-label="Volume control">
+                        <div class="volume-control">
+                            <button id="volume-btn" class="volume-btn" aria-pressed="false" aria-label="Mute"
+                                title="Mute">
+                                <img class="invert" src=".\svg\volume.svg" alt="Volume"/>
+                            </button>
+                            <input type="range" id="volume-slider" min="0" max="100" value="100" aria-label="Volume">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
