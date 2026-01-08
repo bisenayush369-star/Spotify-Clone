@@ -1,6 +1,4 @@
-
-🚀 Live Links
-
+## 🚀 Live Preview
 https://spotify-clone-u.netlify.app/
 
 ---
