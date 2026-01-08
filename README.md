@@ -30,24 +30,10 @@ No frameworks or libraries used.
 
 ---
 
-## 📁 Project Structure
+## 👨‍💻 Dev
+Ayush (AyushdevX)
 
-Spotify-Clone/
-├── index.htm
-├── README.md
-├── script.js
-├── style.css
-├── utility.css
-├── svg/
-│ ├── play.svg
-│ ├── pause.svg
-│ ├── next.svg
-│ ├── volume.svg
-│ └── other icons
-└── songs/
-├── Playlist folders
-├── audio files (.mp3)
-└── manifeast.json
+---
 
 ## ⭐ Support
 
